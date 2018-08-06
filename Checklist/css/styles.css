@@ -1,0 +1,344 @@
+
+header{
+margin: 0px 0 40px 0;
+text-align: center;
+background-color: #1a2d71;
+height: auto;
+}
+
+ header h2{
+   color: #ed7401;
+   text-align: right;
+   padding: 25px;
+ }
+
+.row{
+  margin: 10px 0 10px 0;
+}
+
+label{
+color: #1a2d71;
+font-family: 'Roboto', sans-serif;
+}
+
+/* line through class*/
+/* .myClass {
+  text-decoration: line-through #ed7401;
+} */
+
+.row_title{
+   font-weight: bolder;
+   text-align: center;
+   color: #1a2d71;
+   border-top: 2px solid #E8E2E2;
+   border-bottom: 2px solid #E8E2E2;
+   font-family: 'Roboto', sans-serif;
+   padding: 2px 0px;
+}
+
+.left{
+  width: 20%;
+  display: block;
+  padding: 5px 5px 0px 0px;
+  float: left;
+  margin-top: 5px;
+}
+
+.middle{
+  width: 60%;
+  display: block;
+  padding: 5px 5px 0px 10px;
+}
+
+.middle p {
+  line-height: normal;
+}
+
+.right{
+  width: 20%;
+  display: block;
+  padding: 5px 5px 0px 5px;
+  float: right;
+}
+
+.icon{
+  top: 5px;
+  margin: 5px;
+}
+
+p a{
+  text-decoration: none;
+  color: #ed7401;
+}
+
+.img{
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.text{
+  clear: both;
+  content: inherit;
+  position: relative;
+  padding-left: 5px;
+}
+
+
+label{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#reset{
+  margin: 2px 0px;
+  border: 2px solid #ed7401;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ed7401;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  box-shadow: 2px 2px 3px  grey;
+}
+
+#print{
+  border: 2px solid #ed7401;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ed7401;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  box-shadow: 2px 2px 3px  grey;
+}
+
+#mail{
+  margin: 2px 2px 1px 0px;
+  border: 2px solid #ed7401;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ed7401;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  padding: 1px;
+  box-shadow: 2px 2px 3px  grey;
+}
+
+#mail a{
+  color: #ed7401;
+}
+
+/* The container */
+.check_con {
+    display: block;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check_con input {
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    height: 17px;
+    width: 9px;
+    border: solid #E8E2E2;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+/* When the checkbox is checked, add a white background */
+.check_con input:checked ~ .checkmark {
+    background-color: white;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.check_con input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.check_con .checkmark:after {
+    width: 9px;
+    height: 17px;
+    border: solid #ed7401;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+}
+
+footer{
+  height: 35px;
+  background-color: #1a2d71;
+}
+
+.navbar-fixed-right{
+      position: fixed;
+      bottom: 20px;
+      right: 0px;
+}
+
+.navbar-fixed-right .inline li{
+  bottom: 0px;
+  right: 0px;
+}
+
+.inline li{
+  display:  block;
+  list-style: none;
+  width: 35px
+}
+
+
+.navbar-fixed{
+      position: fixed;
+      bottom: 20px;
+      left: 0px;
+}
+
+.navbar-fixed ul li{
+  bottom: 0px;
+  left: 0px;
+}
+
+ul li{
+  display:  block;
+  list-style: none;
+  width: 35px
+}
+
+.navbar-fixed p{
+  font-weight: bold;
+  color: #1a2d71;
+
+}
+
+/*for devices between 10px and 499px*/
+@media (min-width 10px) {
+.img{
+  margin-right: 10px;
+  }
+
+  .row_title{
+     font-weight: bolder;
+     text-align: center;
+     color: #1a2d71;
+     border-bottom: 2px solid #E8E2E2;
+  }
+
+  #print{
+    display: none;
+  }
+  .inline li{
+    display: block;
+    list-style: none;
+  }
+
+  .navbar-fixed-right{
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        margin: 2px;
+        margin-left: 3px;
+  }
+}
+
+/*for devices below 525px*/
+@media (max-width: 525px) {
+
+  header h2{
+    text-align: center;
+    padding-top: 9%;
+    width: 40%;
+    float: left;
+    font-size: 23px;
+  }
+
+  .logo{
+    width: 60%;
+    float: left;
+  }
+
+  .left{
+    margin-right: 3px;
+  }
+
+  .middle{
+    margin: 15px;
+  }
+  .right{
+    border-bottom: 0.5px solid #E8E2E2;
+    width: 100%;
+  }
+  #print{
+    display: none;
+  }
+
+  .navbar-fixed-right{
+        bottom: 20px;
+        right: 5px;
+  }
+
+  .inline li{
+    display: block;
+    list-style: none;
+  }
+
+  .navbar-fixed ul li p{
+    position: fixed;
+    top: 110px;
+    right: 5px;
+  }
+}
+
+
+
+@media(max-width: 768px){
+  #print{
+    display: none;
+  }
+
+  .navbar-fixed-right{
+        bottom: 45px;
+        right: 0px;
+  }
+
+  .inline li{
+    display: block;
+    list-style: none;
+  }
+
+  .navbar-fixed{
+        top: 115px;
+        left: 80%;
+        margin-right: 30px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .img{
+    margin-right: 50px;
+    margin-left: 0;
+  }
+}

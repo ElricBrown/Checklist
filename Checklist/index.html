@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Checklist |</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--style sheet link-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--bootstrap link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--print stylesheet link-->
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+
+    <link rel="icon" type="image/png"  href="assets/android-icon-36x36.png">
+  </head>
+  <body>
+
+    <header class="navbar sticky-top">
+      <!-- <img class="logo" src="assets/Constantia_logo.png" alt=""> -->
+      <h2>CHECKLIST</h2>
+    </header>
+
+    <div class="navbar-fixed">
+      <ul>
+        <li><p class="counter"></p></li>
+      </ul>
+      </div>
+
+      <div class="navbar-fixed-right">
+        <ul class="inline">
+          <li><button id="print" onclick="window.print();" title="Print"><i class="fa fa-print"></i></button></li>
+          <li><button onclick="clearClick()" id="reset" title="Click reset, then hit refresh"><i class="fa fa-refresh"></i></button></li>
+          <!-- <li><button id="mail"><a href="javascript:emailCurrentPage()" title="Mail"><i class="fa fa-envelope"></i></a></button></li> -->
+        </ul>
+        </div>
+
+<div id="content" class="print">
+<div class="container">
+<!--row 1-->
+<!--title-->
+  <div class="row_title">
+    <h3>Research</h3>
+  </div>
+<div class="row">
+    <!--competitive Analysis-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/Deep-Crawl.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <div class="text">
+        <label for="checkbox1" class="labels">Competitive Analysis</label>
+        <p>See how others solve similar problems and try to not reinvent the wheel.
+        <a  href="http://boxesandarrows.com/competitive-analysis-understanding-the-market-context/" target="_blank">read more</a></p>
+      </div>
+    </div>
+
+      <div class="right">
+          <label class="check_con">
+              <input id="checkbox1"  type="checkbox" store="checkbox1" class="strikeOut" name="checked">
+              <span class="checkmark"></span>
+          </label>
+
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--data analysis-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/Analytics.png"alt="" class="icon">
+      </div>
+
+      <div class="middle">
+      <label for="checkbox2" >Data Analysis</label>
+        <p>Do you have all the useful data you need? Try to have a look at funnels, clicks, page views, performances..
+        <a href="https://www.nngroup.com/articles/analytics-user-experience/" target="_blank">read more</a></p>
+      </div>
+
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox2"  type="checkbox" store="checkbox2" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--user feedback-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/Viral-Marketing.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <label for="checkbox3" >User feedback</label>
+        <p>Always speak with Customer Care team! Don't have one? Check your old surveys or videos, what your customer says? What do they actually do?
+        <a href="https://www.interaction-design.org/literature/article/user-research-what-it-is-and-why-you-should-do-it" target="_blank">read more</a></p>
+      </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox3"  type="checkbox" store="checkbox3" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+</div>
+<!--end-->
+
+
+<!--title-->
+  <div class="row_title">
+    <h3>Plan</h3>
+  </div>
+<!--row 2-->
+<div class="row">
+    <!--user stories-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/business-card.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <div class="text">
+        <label for="checkbox4">User stories</label>
+        <p>Have you done personas yet? If not DO IT NOW. Ok, now use them to write down user stories and scenarios.
+        <a  href="http://chrbutler.com/how-to-tell-the-users-story" target="_blank">read more</a></p>
+      </div>
+    </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox4"  type="checkbox" store="checkbox4" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--User flows-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/Everflux.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+      <label for="checkbox5">User flows</label>
+        <p>Create your user's flow based on the scenarios you created, you can use it later to review the journey and create wireframes on top of each step.
+        <a  href="https://www.smashingmagazine.com/2012/01/stop-designing-pages-start-designing-flows/" target="_blank">read more</a></p>
+      </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox5"  type="checkbox" store="checkbox5" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--red routes-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/computer.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <label for="checkbox6">Red routes</label>
+        <p>Define red routes for your product and you'll be able to identify, prioritise and eliminate any usability obstacles on key user journeys.
+        <a href="https://www.userfocus.co.uk/articles/prioritising-functions.html" target="_blank">read more</a></p>
+      </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox6"  type="checkbox" store="checkbox6" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+</div>
+<!--end-->
+
+<!--title-->
+  <div class="row_title">
+    <h3>Explore</h3>
+  </div>
+<!--row 3-->
+<div class="row">
+    <!--brainstorm and sKetch-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/beer.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <div class="text">
+        <label for="checkbox7">Brainstorm & sketch</label>
+        <p>Find a war room, fill it with markers and drinks, get together and sketch, discuss, vote, disrupt, have fun!
+        <a  href="http://gamestorming.com/the-wiki/" target="_blank">read more</a></p>
+      </div>
+    </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox7"  type="checkbox" store="checkbox7" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--wireframe-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/Blog.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+      <label for="checkbox8">Wireframe</label>
+        <p>Add some details and structure to your ideas, reuse patterns and create pages on top of your user flows so you'll not leave anything behind.
+        <a  href="https://www.uxpin.com/studio/ebooks/guide-to-wireframing/" target="_blank">read more</a></p>
+      </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox8"  type="checkbox" store="checkbox8" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--prototype-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/API.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <label for="checkbox9">Prototype</label>
+        <p>You can start creating paper prototypes and continuously iterate to more functional ones. Use sketches, HTML pages or static images, then just get some people and test.
+        <a href="http://uxdesignweekly.com/ux-resources/prototyping-tools/" target="_blank">read more</a></p>
+      </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox9"  type="checkbox" store="checkbox9" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!--end-->
+</div>
+<!--end-->
+
+<!--for printing purposes-->
+<div class="pagebreak"> </div>
+
+<!--title-->
+  <div class="row_title">
+    <h3>Communicate</h3>
+  </div>
+<!--row 4-->
+<div class="row">
+    <!--IA-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/Dynamic-content.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <div class="text">
+        <label for="checkbox10">IA(Information Architecture)</label>
+        <p>Understand your users, your data structure and your channels. How can you organise your navigation and content in a clear and consistent way?
+        <a  href="http://alistapart.com/article/thedisciplineofcontentstrategy" target="_blank">read more</a></p>
+      </div>
+    </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox10"  type="checkbox" store="checkbox10" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--Language-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/typewriter.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+      <label for="checkbox11">Language</label>
+        <p>Follow your brand personality, keep in mind users' culture and language, the context of your product and make sure they understand you.
+        <a  href="http://alistapart.com/article/translation-is-ux" target="_blank">read more</a></p>
+      </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox11"  type="checkbox" store="checkbox11" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--Accessibility-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/sofa.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <label for="checkbox12">Accessibility</label>
+        <p>You don't need to add extra functionality or to duplicate any content. The key is simply to assess the requirements of those with different skills and limited devices.
+        <a href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction" target="_blank">read more</a></p>
+      </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox12"  type="checkbox" store="checkbox12" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+</div>
+<!--end-->
+
+<!--title-->
+  <div class="row_title">
+    <h3>Create</h3>
+  </div>
+
+<!--row 5-->
+<div class="row">
+    <!--UI elements-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/Squeeze-Page.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <div class="text">
+        <label for="checkbox13">UI elements</label>
+        <p>Reuse elements and patterns. Follow your style guidelines. Don't have any? Create your guidelines. Start small, then create pages.
+        <a  href="http://styleguides.io/" target="_blank">read more</a></p>
+      </div>
+    </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox13"  type="checkbox" store="checkbox13" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--Gestures-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/cell.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+      <label for="checkbox14">Gestures</label>
+        <p>So you have a swipe slider? Tell me more about pinch, drag, zoom, row_title, shake, six-inch smartphones, left-handed people, mouseover, kinect, motion detection...
+        <a  href="https://www.smashingmagazine.com/2013/05/gesture-driven-interface/" target="_blank">read more</a></p>
+      </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox14"  type="checkbox" store="checkbox14" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--Responsiveness-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/User-Experience.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <label for="checkbox15">Responsiveness</label>
+        <p>Can I see it on my mobile? Oh wait, what about my smart-watch which works as a remote for my 50" TV. Bonus: remember cross device experience.
+        <a href="http://uxmag.com/articles/create-a-better-responsive-user-experience" target="_blank">read more</a></p>
+      </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox15"  type="checkbox" store="checkbox15" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+</div>
+<!--end-->
+
+<!--title-->
+  <div class="row_title">
+    <h3>Give feedback</h3>
+  </div>
+
+<!--row 6-->
+<div class="row">
+    <!--Waiting times-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/lunch.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <div class="text">
+        <label for="checkbox16">Waiting times</label>
+        <p>If your users have to wait ages for the page to load, at least show them a loader. If take longer why don't you try something more entertaining?
+        <a  href="http://www.sitepoint.com/3-tips-make-application-feel-faster/" target="_blank">read more</a></p>
+      </div>
+    </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox16"  type="checkbox" store="checkbox16" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--Errors-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/spam.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+      <label for="checkbox17">Errors</label>
+        <p>Be clear and specific on what and where user's error is. I mean, your error, because if it's your fault you should say it.
+        <a  href="http://uxmag.com/articles/failing-gracefully" target="_blank">read more</a></p>
+      </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox17"  type="checkbox" store="checkbox17" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--Completed actions-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/Usability.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <label for="checkbox18">Completed Actions</label>
+        <p>Give immediate and clear feedback of successful user's actions. Do not always wait for server response, trust your server once in a while!
+        <a href="http://www.lukew.com/ff/entry.asp?1759" target="_blank">read more</a></p>
+      </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox18"  type="checkbox" store="checkbox18" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+</div>
+<!--end-->
+
+<!--for printing purposes-->
+<div class="pagebreak"> </div>
+
+<!--title-->
+  <div class="row_title">
+    <h3>Finalise</h3>
+  </div>
+
+<!--row 7-->
+<div class="row">
+    <!--Finalise Layout-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/Optimization.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <div class="text">
+        <label for="checkbox19">Finalise Layout</label>
+        <p>It's time to let your design shine, make it in the right way, don't stop with the first solution, always ask "is this the best you can do?"
+        <a  href="http://www.usability.gov/what-and-why/visual-design.html" target="_blank">read more</a></p>
+      </div>
+    </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox19"  type="checkbox" store="checkbox19" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--use of images adn icons-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/E-Commerce.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+      <label for="checkbox20">Use of images and icons</label>
+        <p>Use of icons and images is strongly influenced by context, culture and layout that you use. Like icons, test your images, small changes can bring huge improvements.
+        <a  href="http://www.nngroup.com/articles/icon-usability/" target="_blank">read more</a></p>
+      </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox20"  type="checkbox" store="checkbox20" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--fonts & colours hierachy-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/Heading-Tag.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <label for="checkbox21">Font & colours hierachy</label>
+        <p>Use colours and font sizes properly, try to follow your guidelines and keep it simple. The best visual hierarchies lead users to take the action confidently.
+        <a href="http://www.lukew.com/ff/entry.asp?1759" target="_blank">read more</a></p>
+      </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox21"  type="checkbox" store="checkbox21" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+</div>
+<!--end-->
+
+<!--title-->
+  <div class="row_title">
+    <h3>Delight</h3>
+  </div>
+
+<!--row 8-->
+<div class="row">
+    <!--micro copyFinalise Layout-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/pen-ink.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <div class="text">
+        <label for="checkbox22">Micro copy</label>
+        <p>Every word is important, and a bit of personality will help your brand.
+        <a  href="http://www.smashingmagazine.com/2012/07/18/the-personality-layer/" target="_blank">read more</a></p>
+      </div>
+    </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox22"  type="checkbox" store="checkbox22" checked="checked" class="strikeOut" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--micro interactions-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/search-document.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+      <label for="checkbox23">Micro interactions</label>
+        <p>Trigger, rules, feedback, loop. Details make the product. Bonus: Ever heard about easter eggs?
+        <a  href="http://microinteractions.com/what-is-a-microinteraction/" target="_blank">read more</a></p>
+      </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox23"  type="checkbox" store="checkbox23" checked="checked" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--Transitions-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/Exit-Page.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <label for="checkbox24">Transitions</label>
+        <p>Motion shouldn't be only beautiful, it should build meaning about the spatial relationships, functionality, and intention of the system.
+        <a href="http://www.google.co.uk/design/spec/animation/authentic-motion.html" target="_blank">read more</a></p>
+      </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox24"  type="checkbox" store="checkbox24" checked="checked" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+</div>
+<!--end-->
+
+<!--title-->
+  <div class="row_title">
+    <h3>Analyse</h3>
+  </div>
+
+<!--row 9-->
+<div class="row">
+    <!--kpi setup-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/target-copy.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <div class="text">
+        <label for="checkbox25">KPI setup</label>
+        <p>What you want to achieve? What are your goals? Write down how you define success and failure and check if you have everything you need to collect the data.
+        <a  href="http://www.gv.com/lib/how-to-choose-the-right-ux-metrics-for-your-product" target="_blank">read more</a></p>
+      </div>
+    </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox25"  type="checkbox" store="checkbox25" checked="checked" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--ab testing-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/Article-Marketing.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+      <label for="checkbox26">AB test plan</label>
+        <p>Plan your AB test ahead and, if you can, plan a short roadmap of improvements. Your goal is not just improving KPIs, but learning something.
+        <a  href="https://www.gov.uk/service-manual/user-centred-design/user-research/multivariate-testing.html" target="_blank">read more</a></p>
+      </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox26"  type="checkbox" store="checkbox26" checked="checked" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+
+  <!--test-->
+  <div class="col-lg">
+    <div class="row">
+      <div class="left">
+        <img class="img" src="assets/icons128/Conversion-rate.png" alt="" class="icon">
+      </div>
+
+      <div class="middle">
+        <label for="checkbox27">Test</label>
+        <p>UX lab, survey, sessions recording... test, observe and fix, test, observe and fix...
+        <a href="http://www.nngroup.com/articles/which-ux-research-methods/" target="_blank">read more</a></p>
+      </div>
+
+      <div class="right">
+        <label class="check_con">
+            <input id="checkbox27"  type="checkbox" store="checkbox27" checked="checked" name="checked">
+            <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--end-->
+</div>
+</div>
+<!--end-->
+</div>
+</div>
+
+<footer>
+
+</footer>
+
+<script src="js/jquery_3_1_1.min.js" charset="utf-8"></script>
+<script src="js/script.js"></script>
+<script src="js/checkCount.js"></script>
+<script src="js/mail.js"></script>
+
+  </body>
+</html>

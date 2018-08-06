@@ -1,0 +1,32 @@
+body {visibility:hidden;}
+.print {visibility:visible;}
+
+.pagebreak { page-break-before: always; }
+.counter{
+  display: none;
+}
+
+
+.row_title{
+   font-weight: normal;
+}
+
+label{
+  font-weight: normal;
+}
+
+a{
+  display: none;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  height: 17px;
+  width: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
